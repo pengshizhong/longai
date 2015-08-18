@@ -2,14 +2,15 @@ package com.longai.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.longai.dao.*;
 import com.longai.model.*;
-
+@Service
 public class EnrollService {
+	@Autowired
 	private EnrollDAO enrollDAO;
-	public void setEnrollDAO(EnrollDAO enrollDAO) {
-		this.enrollDAO=enrollDAO;
-	}
 	public Enroll findById(int id){
 		return enrollDAO.findById(id);
 	}

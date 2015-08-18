@@ -1,0 +1,164 @@
+八月 18, 2015 9:02:57 上午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Tue Aug 18 09:02:57 CST 2015
+八月 18, 2015 9:03:01 上午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 31ms
+八月 18, 2015 9:14:16 上午 org.hibernate.eclipse.HibernatePlugin start
+信息: HibernatePlugin Started
+八月 18, 2015 9:15:44 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:18:40 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:18:43 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.Environment <clinit>
+信息: Hibernate 3.2.5
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.Environment <clinit>
+信息: hibernate.properties not found
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.Environment buildBytecodeProvider
+信息: Bytecode provider name : cglib
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.Environment <clinit>
+信息: using JDK 1.4 java.sql.Timestamp handling
+八月 18, 2015 9:20:50 上午 org.hibernate.util.XMLHelper$ErrorLogger error
+严重: Error parsing XML: C:\Users\tomm\Desktop\workplace\github项目\longai\longai\src\conf\applicationContext.xml(2) Document is invalid: no grammar found.
+八月 18, 2015 9:20:50 上午 org.hibernate.util.XMLHelper$ErrorLogger error
+严重: Error parsing XML: C:\Users\tomm\Desktop\workplace\github项目\longai\longai\src\conf\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: RDBMS: MySQL, version: 5.6.15
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic flush during beforeCompletion(): disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic session close at end of transaction: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch size: 15
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch updates for versioned data: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Scrollable result sets: enabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC3 getGeneratedKeys(): enabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Connection release mode: auto
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Maximum outer join fetch depth: 2
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default batch fetch size: 1
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Generate SQL with comments: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL updates by primary key: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL inserts for batching: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+信息: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query language substitutions: {}
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JPA-QL strict compliance: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Second-level cache: enabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query cache: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory createCacheProvider
+信息: Cache provider: org.hibernate.cache.NoCacheProvider
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Optimize cache for minimal puts: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Structured second-level cache entries: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Statistics: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Deleted entity synthetic identifier rollback: disabled
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default entity-mode: pojo
+八月 18, 2015 9:20:50 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Named query checking : enabled
+八月 18, 2015 9:20:52 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:23:33 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:24:13 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:24:41 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:24:57 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 9:25:15 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:08:56 上午 org.hibernate.util.XMLHelper$ErrorLogger error
+严重: Error parsing XML: C:\Users\tomm\Desktop\workplace\github项目\longai\longai\src\conf\applicationContext.xml(2) Document is invalid: no grammar found.
+八月 18, 2015 11:08:56 上午 org.hibernate.util.XMLHelper$ErrorLogger error
+严重: Error parsing XML: C:\Users\tomm\Desktop\workplace\github项目\longai\longai\src\conf\applicationContext.xml(2) Document root element "beans", must match DOCTYPE root "null".
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: RDBMS: MySQL, version: 5.6.15
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} )
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic flush during beforeCompletion(): disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic session close at end of transaction: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch size: 15
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch updates for versioned data: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Scrollable result sets: enabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC3 getGeneratedKeys(): enabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Connection release mode: auto
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Maximum outer join fetch depth: 2
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default batch fetch size: 1
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Generate SQL with comments: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL updates by primary key: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL inserts for batching: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+信息: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query language substitutions: {}
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JPA-QL strict compliance: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Second-level cache: enabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query cache: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory createCacheProvider
+信息: Cache provider: org.hibernate.cache.NoCacheProvider
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Optimize cache for minimal puts: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Structured second-level cache entries: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Statistics: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Deleted entity synthetic identifier rollback: disabled
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default entity-mode: pojo
+八月 18, 2015 11:08:56 上午 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Named query checking : enabled
+八月 18, 2015 11:08:58 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:14:19 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:14:41 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:15:55 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:16:10 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:16:13 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:16:28 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:17:05 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:17:42 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 11:18:24 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]

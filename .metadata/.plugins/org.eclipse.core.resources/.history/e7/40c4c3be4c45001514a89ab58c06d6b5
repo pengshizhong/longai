@@ -1,0 +1,26 @@
+package com.longai.dao;
+
+import java.util.Map;
+
+import org.apache.commons.digester.plugins.strategies.FinderFromClass;
+
+import antlr.collections.List;
+
+import com.longai.model.User;
+
+public class UserDAO extends BaseDAO{
+	public void save(User user){
+		super.saveOrUpdate(user);
+	}
+	public void delete(User user){
+		super.delete(user);
+	}
+	public User findById(int id){
+		return (User)super.findById(id, User.class);
+	}
+	public List<User> findAll(){
+		Map<String, object>map=null;
+		String queryStr="from User";
+		return super.queryAll(queryStr, map);
+	}
+}

@@ -1,0 +1,10 @@
+package com.longai.controller;
+
+import com.longai.service.UserService;
+
+public class UserAction {
+	private UserService userService;
+	public void serUserService(UserService userService) {
+		this.userService=userService;
+	}
+}

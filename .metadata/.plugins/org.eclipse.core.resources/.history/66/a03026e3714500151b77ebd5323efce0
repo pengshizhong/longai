@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Struts2标签外观设置 -->
+	<constant name="struts.ui.theme" value="simple" /> 
+	<constant name="struts.ui.templateDir" value="template" /> 
+	<constant name="struts.ui.templateSuffix" value="ftl" /> 
+	
+	<!-- struts2委托spring管理 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	
+	<package name="dl"  namespace="/test" extends="struts-default,json-default">
+		<!-- 显示所有会员 -->
+       <action name="list" class="UserinfoController" method="search">
+            <result name="success">/list.jsp</result>
+       </action>
+       <action name="save" class="UserinfoController" method="save">
+            <result type="redirectAction">list</result>
+       </action>
+       <action name="load" class="UserinfoController" method="load">
+            <result name="success">/edit.jsp</result>
+       </action>
+       <!-- 删除会员 -->
+       <action name="remove" class="UserinfoController" method="remove">
+           <result type="redirectAction">list</result>
+       </action>
+       <action name="Login" class="UserinfoController" method="login">
+           <result name="success">/index.jsp</result>
+           <result name="error">/login.jsp</result>
+       </action>
+       
+       <action name="json" class="UserinfoController" method="Json">  
+            <result type="json">  
+                <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->  
+                <param name="root">dataMap</param>  
+            </result>  
+        </action>  
+       
+	</package>
+</struts>    

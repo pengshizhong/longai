@@ -1,0 +1,25 @@
+package com.longai.service;
+
+import java.util.List;
+
+import com.longai.dao.*;
+import com.longai.model.*;
+
+public class NewslikeService {
+	private NewslikeDAO newslikeDAO;
+	public void setNewscomDAO(NewslikeDAO newslikeDAO) {
+		this.newslikeDAO=newslikeDAO;
+	}
+	public Newslike findById(int id){
+		return newslikeDAO.findById(id);
+	}
+	public void save(Newslike newslike){
+		newslikeDAO.save(newslike);
+	}
+	public void delete(Newslike newslike){
+		newslikeDAO.delete(newslike);
+	}
+	public List<Newslike> findAll(){
+		return newslikeDAO.findAll();
+	}
+}

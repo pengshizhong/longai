@@ -1,0 +1,7 @@
+package com.longai.service;
+
+import com.longai.dao.*;
+
+public class UserService {
+	private UserDAO userDAO;
+}

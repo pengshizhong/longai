@@ -3,8 +3,10 @@ package com.longai.dao;
 import java.util.List;
 import java.util.Map;
 
-import com.longai.model.*;
+import org.springframework.stereotype.Repository;
 
+import com.longai.model.*;
+@Repository
 public class MessageDAO extends BaseDAO{
 	public void save(Message message){
 		super.saveOrUpdate(message);

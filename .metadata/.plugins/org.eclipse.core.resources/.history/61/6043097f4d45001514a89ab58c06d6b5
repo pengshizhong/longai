@@ -1,0 +1,24 @@
+package com.longai.dao;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.longai.model.*;
+
+public class EventDAO extends BaseDAO{
+	public void save(Event event){
+		super.saveOrUpdate(event);
+	}
+	public void delete(Event event){
+		super.delete(event);
+	}
+	public User findById(int id){
+		return (Event)super.findById(id, User.class);
+	}
+	public List<User> findAll(){
+		Map<String, Object>map=null;
+		String queryStr="from User";
+		return super.queryAll(queryStr, map);
+	}
+}

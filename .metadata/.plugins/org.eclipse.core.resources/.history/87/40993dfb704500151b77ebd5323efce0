@@ -1,0 +1,27 @@
+package com.longai.controller;
+
+import java.util.List;
+
+import com.longai.model.User;
+import com.longai.service.UserService;
+
+public class UserAction {
+	private UserService userService;
+	public void serUserService(UserService userService) {
+		this.userService=userService;
+	}
+	
+	private User user;
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	public String login() throws Exception{
+		List<User> u= userService.findAll();
+		return "success";
+	}
+}

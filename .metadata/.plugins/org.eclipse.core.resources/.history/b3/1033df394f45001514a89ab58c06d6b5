@@ -1,0 +1,10 @@
+package com.longai.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.longai.model.*;
+
+public class NewsDAO {
+
+}

@@ -1,5 +1,21 @@
 package com.longai.controller;
 
-public class UserAction {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.longai.model.User;
+import com.longai.service.UserService;
+
+@Controller
+public class UserAction {
+	@Autowired
+    UserService userService;
+
+	@ResponseBody
+	@RequestMapping("login")
+	public String login() throws Exception{
+		return "ssdf";
+	}
 }

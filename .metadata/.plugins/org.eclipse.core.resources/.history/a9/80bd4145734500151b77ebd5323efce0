@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Struts2标签外观设置 -->
+	<constant name="struts.ui.theme" value="simple" /> 
+	<constant name="struts.ui.templateDir" value="template" /> 
+	<constant name="struts.ui.templateSuffix" value="ftl" /> 
+	
+	<!-- struts2委托spring管理 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	
+	<package name="longai"  namespace="/test" extends="struts-default,json-default">
+		<!-- 显示所有会员 -->
+       <action name="Login" class="UserAction" method="login">
+            <result name="success">/index.jsp</result>
+       </action> 
+       
+	</package>
+</struts>    

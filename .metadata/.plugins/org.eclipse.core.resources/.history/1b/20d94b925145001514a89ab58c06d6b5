@@ -1,0 +1,25 @@
+package com.longai.service;
+
+import java.util.List;
+
+import com.longai.dao.*;
+import com.longai.model.*;
+
+public class EnrollService {
+	private Enroll newsDAO;
+	public void setNewsDAO(Enroll newsDAO) {
+		this.newsDAO=newsDAO;
+	}
+	public Enroll findById(int id){
+		return newsDAO.findById(id);
+	}
+	public void save(Enroll news){
+		newsDAO.save(news);
+	}
+	public void delete(Enroll news){
+		newsDAO.delete(news);
+	}
+	public List<Enroll> findAll(){
+		return newsDAO.findAll();
+	}
+}

@@ -2,14 +2,16 @@ package com.longai.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.longai.dao.*;
 import com.longai.model.*;
-
+@Service
 public class MessageService {
+	@Autowired
 	private MessageDAO messageDAO;
-	public void setMessageDAO(MessageDAO messageDAO) {
-		this.messageDAO=messageDAO;
-	}
+
 	public Message findById(int id){
 		return messageDAO.findById(id);
 	}

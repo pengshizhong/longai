@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.commons.digester.plugins.strategies.FinderFromClass"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.longai.model.Event"/>
+<fullyQualifiedTypeName name="com.longai.model.Enroll"/>
+<fullyQualifiedTypeName name="com.longai.model.Message"/>
+<fullyQualifiedTypeName name="com.longai.model.Momentcomment"/>
+<fullyQualifiedTypeName name="com.longai.model.Moment"/>
+<fullyQualifiedTypeName name="com.longai.model.Momentlike"/>
+<fullyQualifiedTypeName name="com.longai.model.Newslike"/>
+<fullyQualifiedTypeName name="com.longai.dao.UserDAO"/>
+<fullyQualifiedTypeName name="com.longai.dao.NewscommentDAO"/>
+<fullyQualifiedTypeName name="com.longai.model.Newscomment"/>
+<fullyQualifiedTypeName name="com.longai.dao.BaseDAO"/>
+<fullyQualifiedTypeName name="com.longai.service.UserService"/>
+<fullyQualifiedTypeName name="com.longai.model.User"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="org.springframework.web.portlet.bind.annotation.ResourceMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,32 @@
+八月 18, 2015 2:03:02 下午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Tue Aug 18 14:03:02 CST 2015
+八月 18, 2015 2:03:05 下午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 63ms
+八月 18, 2015 2:03:05 下午 org.hibernate.eclipse.HibernatePlugin start
+信息: HibernatePlugin Started
+八月 18, 2015 2:12:16 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:42:56 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:43:20 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:44:30 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:52:46 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:53:10 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:53:17 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:54:16 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:54:54 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:55:37 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:55:39 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:55:54 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]
+八月 18, 2015 2:57:26 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from file [C:/Users/tomm/Desktop/workplace/github项目/longai/longai/src/conf/applicationContext.xml]

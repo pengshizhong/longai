@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<deployments>
+  <deployment alt-context-root="" context-root="/longai" deployment-path="J:/tomcat8/apache-tomcat-8.0.21/webapps/longai" project-name="longai" server-id="tomcat8Server" state="DEPLOYED" type="WEB"/>
+</deployments>

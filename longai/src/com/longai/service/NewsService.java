@@ -1,14 +1,17 @@
 package com.longai.service;
 
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.longai.dao.*;
 import com.longai.model.*;
-
+@Service
 public class NewsService {
+	@Autowired
 	private NewsDAO newsDAO;
-	public void setNewsDAO(NewsDAO newsDAO) {
-		this.newsDAO=newsDAO;
-	}
+
 	public News findById(int id){
 		return newsDAO.findById(id);
 	}

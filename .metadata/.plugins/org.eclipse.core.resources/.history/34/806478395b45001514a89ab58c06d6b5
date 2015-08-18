@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	 http://www.springframework.org/schema/tx 
+	 http://www.springframework.org/schema/tx/spring-tx.xsd 
+	 http://www.springframework.org/schema/aop   
+     http://www.springframework.org/schema/aop/spring-aop-3.1.xsd" 
+    xmlns:tx="http://www.springframework.org/schema/tx">
+	
+	<!-- prototype表示每次获取对象时，Spring都会创建一个新的实例 -->
+	<bean id="UserAction" class="com.longai.controller.UserAction" scope="prototype">
+		<property name="userService">
+			<ref bean="UserService" />
+		</property>
+	</bean>
+	<bean id="EventAction" class="com.longai.controller.EventAction" scope="prototype">
+		<property name="eventService">
+			<ref bean="EventService" />
+		</property>
+	</bean>
+	<bean id="EnrollAction" class="com.longai.controller.EnrollAction" scope="prototype">
+		<property name="enrollService">
+			<ref bean="EnrollService" />
+		</property>
+	</bean>
+	<bean id="MessageAction" class="com.longai.controller.MessageAction" scope="prototype">
+		<property name="messageService">
+			<ref bean="MessageService" />
+		</property>
+	</bean>
+	<bean id="NewsAction" class="com.longai.controller.newsAction" scope="prototype">
+		<property name="newsService">
+			<ref bean="NewsService" />
+		</property>
+	</bean>
+	<bean id="NewslikeAction" class="com.longai.controller.NewslikeAction" scope="prototype">
+		<property name="newslikeService">
+			<ref bean="NewslikeService" />
+		</property>
+	</bean>
+	<bean id="NewscommentAction" class="com.longai.controller.NewscommentAction" scope="prototype">
+		<property name="newscommentService">
+			<ref bean="NewscommentService" />
+		</property>
+	</bean>
+	<bean id="MomentAction" class="com.longai.controller.MomentAction" scope="prototype">
+		<property name="momentService">
+			<ref bean="MomentService" />
+		</property>
+	</bean>
+	<bean id="MomentlikeAction" class="com.longai.controller.MomentlikeAction" scope="prototype">
+		<property name="momentlikeService">
+			<ref bean="MomentlikeService" />
+		</property>
+	</bean>
+	<bean id="MomentcommentAction" class="com.longai.controller.MomentcommentAction" scope="prototype">
+		<property name="momentcommentService">
+			<ref bean="MomentcommentService" />
+		</property>
+	</bean>
+</beans>

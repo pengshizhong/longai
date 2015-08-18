@@ -61,6 +61,12 @@
             </key>
             <one-to-many class="com.longai.model.Newslike" />
         </set>
+        <set name="pictures" inverse="true">
+            <key>
+                <column name="user_id" not-null="true" unique="true" />
+            </key>
+            <one-to-many class="com.longai.model.Picture" />
+        </set>
         <set name="newscomments" inverse="true">
             <key>
                 <column name="user_sid" />

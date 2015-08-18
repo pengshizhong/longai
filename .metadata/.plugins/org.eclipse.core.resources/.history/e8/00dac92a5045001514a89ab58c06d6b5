@@ -1,0 +1,10 @@
+package com.longai.service;
+
+import com.longai.dao.*;
+
+public class UserService {
+	private UserDAO userDAO;
+	public void setUserDAO(UserDAO userDAO) {
+		this.userDAO=userDAO;
+	}
+}

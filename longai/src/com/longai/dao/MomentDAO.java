@@ -3,8 +3,10 @@ package com.longai.dao;
 import java.util.List;
 import java.util.Map;
 
-import com.longai.model.*;
+import org.springframework.stereotype.Repository;
 
+import com.longai.model.*;
+@Repository
 public class MomentDAO extends BaseDAO{
 	public void save(Moment moment){
 		super.saveOrUpdate(moment);

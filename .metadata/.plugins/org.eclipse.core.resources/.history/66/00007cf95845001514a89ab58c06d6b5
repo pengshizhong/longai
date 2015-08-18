@@ -1,0 +1,10 @@
+package com.longai.service;
+
+import java.util.List;
+
+import com.longai.dao.*;
+import com.longai.model.*;
+
+public class NewslikeService {
+
+}
