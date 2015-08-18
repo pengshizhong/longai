@@ -48,26 +48,26 @@ public abstract class BaseDAO {
 		return query.list();
 	}
 
-	protected List queryLimit(String queryStr, Map<String, Object> map,
-			int from, int max) {
-		Query query = getCurrentSession().createQuery(queryStr);
-		for (String key : map.keySet()) {
-			query.setParameter(key, map.get(key));
-		}
-		if (from >= 0 && max > 0) {
-			query.setFirstResult(from);
-			query.setMaxResults(max);
-		}
-		return query.list();
-	}
-
-	protected Object queryIdentity(String queryStr, Map<String, Object> map) {
-		Query query = getCurrentSession().createQuery(queryStr);
-		for (String key : map.keySet()) {
-			query.setParameter(key, map.get(key));
-		}
-		return query.uniqueResult();
-	}
+//	protected List queryLimit(String queryStr, Map<String, Object> map,
+//			int from, int max) {
+//		Query query = getCurrentSession().createQuery(queryStr);
+//		for (String key : map.keySet()) {
+//			query.setParameter(key, map.get(key));
+//		}
+//		if (from >= 0 && max > 0) {
+//			query.setFirstResult(from);
+//			query.setMaxResults(max);
+//		}
+//		return query.list();
+//	}
+//
+//	protected Object queryIdentity(String queryStr, Map<String, Object> map) {
+//		Query query = getCurrentSession().createQuery(queryStr);
+//		for (String key : map.keySet()) {
+//			query.setParameter(key, map.get(key));
+//		}
+//		return query.uniqueResult();
+//	}
 
 	/**
 	 * @return the sessionFactory
