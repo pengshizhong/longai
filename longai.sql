@@ -32,8 +32,8 @@ CREATE TABLE `enroll` (
   PRIMARY KEY (`enroll_sid`),
   KEY `FK_Relationship_2` (`user_sid`),
   KEY `FK_Relationship_3` (`event_sid`),
-  CONSTRAINT `FK_Relationship_3` FOREIGN KEY (`event_sid`) REFERENCES `event` (`event_sid`),
-  CONSTRAINT `FK_Relationship_2` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`)
+  CONSTRAINT `FK_Relationship_2` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`),
+  CONSTRAINT `FK_Relationship_3` FOREIGN KEY (`event_sid`) REFERENCES `event` (`event_sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -87,13 +87,13 @@ DROP TABLE IF EXISTS `message`;
 CREATE TABLE `message` (
   `message_sid` int(11) NOT NULL AUTO_INCREMENT,
   `message_id` varchar(10) DEFAULT NULL,
-  `from` varchar(30) DEFAULT NULL,
-  `to` varchar(30) DEFAULT NULL,
+  `from` varchar(30),
+  `to` varchar(30),
   `status` enum('FAILED','SENDING','SUCCEED') DEFAULT NULL,
   `sendtime` datetime DEFAULT NULL,
   `receivetime` datetime DEFAULT NULL,
   PRIMARY KEY (`message_sid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,6 +102,7 @@ CREATE TABLE `message` (
 
 LOCK TABLES `message` WRITE;
 /*!40000 ALTER TABLE `message` DISABLE KEYS */;
+INSERT INTO `message` VALUES (1,NULL,'5566',NULL,NULL,NULL,NULL),(2,NULL,'5566',NULL,NULL,NULL,NULL),(3,NULL,'565656','t5',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `message` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -145,8 +146,8 @@ CREATE TABLE `momentcomment` (
   PRIMARY KEY (`momentcomment_id`),
   KEY `FK_Relationship_6` (`user_sid`),
   KEY `FK_Relationship_9` (`moment_id`),
-  CONSTRAINT `FK_Relationship_9` FOREIGN KEY (`moment_id`) REFERENCES `moment` (`moment_id`),
-  CONSTRAINT `FK_Relationship_6` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`)
+  CONSTRAINT `FK_Relationship_6` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`),
+  CONSTRAINT `FK_Relationship_9` FOREIGN KEY (`moment_id`) REFERENCES `moment` (`moment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -174,8 +175,8 @@ CREATE TABLE `momentlike` (
   PRIMARY KEY (`momentlike_id`),
   KEY `FK_Relationship_7` (`user_sid`),
   KEY `FK_Relationship_8` (`moment_id`),
-  CONSTRAINT `FK_Relationship_8` FOREIGN KEY (`moment_id`) REFERENCES `moment` (`moment_id`),
-  CONSTRAINT `FK_Relationship_7` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`)
+  CONSTRAINT `FK_Relationship_7` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`),
+  CONSTRAINT `FK_Relationship_8` FOREIGN KEY (`moment_id`) REFERENCES `moment` (`moment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -229,8 +230,8 @@ CREATE TABLE `newscomment` (
   PRIMARY KEY (`newscomment_id`),
   KEY `FK_Relationship_10` (`news_id`),
   KEY `FK_Relationship_4` (`user_sid`),
-  CONSTRAINT `FK_Relationship_4` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`),
-  CONSTRAINT `FK_Relationship_10` FOREIGN KEY (`news_id`) REFERENCES `news` (`news_id`)
+  CONSTRAINT `FK_Relationship_10` FOREIGN KEY (`news_id`) REFERENCES `news` (`news_id`),
+  CONSTRAINT `FK_Relationship_4` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -258,8 +259,8 @@ CREATE TABLE `newslike` (
   PRIMARY KEY (`newslike_id`),
   KEY `FK_Relationship_11` (`news_id`),
   KEY `FK_Relationship_5` (`user_sid`),
-  CONSTRAINT `FK_Relationship_5` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`),
-  CONSTRAINT `FK_Relationship_11` FOREIGN KEY (`news_id`) REFERENCES `news` (`news_id`)
+  CONSTRAINT `FK_Relationship_11` FOREIGN KEY (`news_id`) REFERENCES `news` (`news_id`),
+  CONSTRAINT `FK_Relationship_5` FOREIGN KEY (`user_sid`) REFERENCES `user` (`user_sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -270,6 +271,38 @@ CREATE TABLE `newslike` (
 LOCK TABLES `newslike` WRITE;
 /*!40000 ALTER TABLE `newslike` DISABLE KEYS */;
 /*!40000 ALTER TABLE `newslike` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `picture`
+--
+
+DROP TABLE IF EXISTS `picture`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `picture` (
+  `picture_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `picname` varchar(45) NOT NULL,
+  `picture_pubtime` date NOT NULL,
+  `originallurl` varchar(200) NOT NULL,
+  `sid` varchar(45) NOT NULL,
+  `permisson` varchar(45) NOT NULL,
+  `nailurl` varchar(200) NOT NULL,
+  PRIMARY KEY (`picture_id`),
+  UNIQUE KEY `picture_id_UNIQUE` (`picture_id`),
+  UNIQUE KEY `user_id_UNIQUE` (`user_id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_sid`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `picture`
+--
+
+LOCK TABLES `picture` WRITE;
+/*!40000 ALTER TABLE `picture` DISABLE KEYS */;
+/*!40000 ALTER TABLE `picture` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -315,4 +348,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-08-17 19:44:56
+-- Dump completed on 2015-08-18 10:16:23
